@@ -1,59 +1,193 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Your Name | Portfolio</title>
-  <link rel="stylesheet" href="protfolio.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhivya Sri | AI Engineer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: #f1f5f9;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #020617;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header h1 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 60px 50px;
+        }
+
+        .hero {
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            color: #38bdf8;
+        }
+
+        .hero p {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #38bdf8;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .skills, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+        }
+    </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Your Name</h1>
+<header>
+    <h1>Dhivya Sri</h1>
     <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
-  </header>
+</header>
 
-  <section id="about">
+<section class="hero">
+    <h2>AI Engineer & ML Developer</h2>
+    <p>Building intelligent solutions using Machine Learning and NLP</p>
+    <a href="https://github.com/Dhivyasri-18" class="btn">View GitHub</a>
+</section>
+
+<section id="about">
     <h2>About Me</h2>
-    <p>Short bio or intro here...</p>
-  </section>
+    <p>
+        I am a Computer Science Engineering student specializing in AI & Machine Learning.
+        I have experience building ML models, NLP systems, and end-to-end pipelines using Python and Scikit-learn.
+        I am passionate about solving real-world problems using data-driven approaches.
+    </p>
+</section>
 
-  <section id="skills">
+<section id="skills">
     <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
-  </section>
+    <div class="skills">
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project Name</h3>
-      <p>Description of the project.</p>
+        <div class="card">
+            <h3>Programming</h3>
+            <p>Python, Java, C</p>
+        </div>
+
+        <div class="card">
+            <h3>Machine Learning</h3>
+            <p>Logistic Regression, Random Forest, SVM</p>
+        </div>
+
+        <div class="card">
+            <h3>NLP</h3>
+            <p>TF-IDF, Tokenization, Sentiment Analysis</p>
+        </div>
+
+        <div class="card">
+            <h3>Tools</h3>
+            <p>Pandas, NumPy, Scikit-learn, SQL, GitHub</p>
+        </div>
+
     </div>
-  </section>
+</section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+<section id="projects">
+    <h2>Projects</h2>
 
-  <footer>
-    <p>&copy; 2025 Your Name</p>
-  </footer>
+    <div class="projects">
 
-  <script src="portfolio.js"></script>
+        <div class="card">
+            <h3>Fake News Detection</h3>
+            <p>NLP model using TF-IDF and Logistic Regression.</p>
+            <a href="https://github.com/Dhivyasri-18/Fake-News-Detection" class="btn">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>Student Placement Prediction</h3>
+            <p>ML model predicting student placement using Random Forest.</p>
+            <a href="https://github.com/Dhivyasri-18/Student-Placement-Prediction" class="btn">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>Titanic Survival Prediction</h3>
+            <p>Classification model with feature engineering and visualization.</p>
+            <a href="https://github.com/Dhivyasri-18/Titanic-Survival-Prediction" class="btn">View Project</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: shivanya250317@gmail.com</p>
+    <p>Phone: 8248391979</p>
+    <p>
+        LinkedIn: 
+        <a href="https://linkedin.com/in/dhivyasri-lakshmanan96a021346" style="color:#38bdf8;">
+            Click Here
+        </a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Dhivya Sri | AI Engineer</p>
+</footer>
+
 </body>
 </html>
-
-
